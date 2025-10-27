@@ -200,7 +200,7 @@ bool Simulator::Init() {
     }
 
     // ウィンドウ初期化
-    mWindow = SDL_CreateWindow("temp", WINDOW_WIDTH, WINDOW_HIGHT, SDL_WINDOW_RESIZABLE);
+    mWindow = SDL_CreateWindow("Monkey Hunting", WINDOW_WIDTH, WINDOW_HIGHT, SDL_WINDOW_RESIZABLE);
     if(mWindow == nullptr) {
         SDL_Log("ウィンドウの作成に失敗しました : %s", SDL_GetError());
         return false;
